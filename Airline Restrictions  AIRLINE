@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main()
+{
+    int testcases;
+    scanf("%d",&testcases);
+    while(testcases--)
+    {
+        int a,b,c,d,e;
+        scanf("%d %d %d %d %d",&a,&b,&c,&d,&e);
+        if((a<=e && (b+c)<=d)||(b<=e && (a+c)<=d)||(c<=e && (b+a)<=d))
+        printf("YES\n");
+        else
+        printf("NO\n");
+        
+    }
+    return 0;
+}
